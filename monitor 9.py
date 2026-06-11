@@ -7,7 +7,7 @@ from datetime import datetime
 #  설정 (여기만 수정하면 됩니다)
 # ================================================
 
-WEBHOOK_URL = "https://discord.com/api/webhooks/1512090909557129389/8Zb2I3arCF8iv9sSodT-AYoYZMCyYcovI1N7I74vVf-_MWKF3M79FZAoDe3BLfuV-yrM"
+WEBHOOK_URL = ""
 
 ROOM_NO = 9
 SEAT_MAP_URL = f"http://168.131.31.182/CHONNAM_MOBILE/seatMap.do?roomNo={ROOM_NO}&searchGB=S"
@@ -59,7 +59,7 @@ def send_discord(empty_seats, new_seats):
     sorted_new   = sorted(new_seats)
 
     message = (
-        f"<@718441698555854929> 🪑 **백야 24H 4F 좌석 알림**\n"
+        f"<> 🪑 **백야 24H 4F 좌석 알림**\n"
         f"🕐 {now()}\n\n"
         f"✅ **새로 빈 좌석** ({new_count}개): `{sorted_new}`\n"
         f"📋 **현재 빈 좌석 전체** ({count}개): `{sorted_empty}`"
